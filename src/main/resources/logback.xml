@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CA" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{hh:mm:ss,SSS} [%t] %-5p %c %X - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.apache.ibatis.level" level="INFO"/>
+    <logger name="javax.activation.level" level="INFO"/>
+    <root level="INFO">
+        <appender-ref ref="CA"/>
+    </root>
+</configuration>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<configuration debug="false" scan="true" scanPeriod="30 seconds">-->
+    <!--<property name="log.dir" value="target/logs" />-->
+    <!--<property name="encoding" value="UTF-8" />-->
+    <!--<property name="plain" value="%msg%n" />-->
+    <!--<property name="std" value="%d{HH:mm:ss.SSS}[%thread][%-5level]%msg %X{us" />-->
+    <!--<property name="normal" value="%d{HH:mm:ss.SSS}[%thread][%-5level]%msg %X{us" />-->
+    <!--&lt;!&ndash;  控制台输出 &ndash;&gt;-->
+    <!--<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">-->
+        <!--<encoder>-->
+            <!--<pattern>-->
+                <!--${plain}-->
+            <!--</pattern>-->
+            <!--<charset>-->
+                <!--${encoding}-->
+            <!--</charset>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+
+    <!--&lt;!&ndash; 时间滚动输出 level为 ALL 日志 &ndash;&gt;-->
+    <!--<appender name="file">-->
+        <!--<encoder>-->
+            <!--<pattern>-->
+                <!--${plain}-->
+            <!--</pattern>-->
+            <!--<charset>-->
+                <!--${encoding}-->
+            <!--</charset>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+<!--</configuration>-->
